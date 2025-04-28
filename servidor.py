@@ -15,7 +15,7 @@ def receber_nome_porco():
     #se for via post, use isso
     nome_porquinho = request.form.get('nomeporco')
 
-    print(nome_porquinho)
+    print(nome_porquinho + 'ldfhsjdfhasjkdf ')
     return 'ok'
 
 app.run()
