@@ -5,6 +5,9 @@
         <title>Title</title>
 
         <style>
+            body{
+                background-color: black;
+            }
             .topo{
                     background-color: red;
                     font-size: 51px;
@@ -14,6 +17,26 @@
                 background-color: black;
                 height: 15px;
                 width: 100%;
+            }
+            .meio{
+                display: flex;
+                background-color: LightGrey;
+                align-items: center;
+            }
+            .meio p{
+
+                color: red;
+                font-size: 22px;
+                text-align: center;
+            }
+            .coluna1{
+                width:33%;
+            }
+            .coluna2{
+                width:33%;
+            }
+            .coluna3{
+                width:33%;
             }
 
         </style>
@@ -28,48 +51,57 @@
 
         </div>
 
-        <div>
-
-            <form action="/sugestaonome" method="post">
-                <label>qual é o nome deste porquinho?</label>
-                <input name="nomeporco">
-
-                <button>Enviar sugestão</button>
-            </form>
+        <div class="meio">
             <br>
-            <img src="static//suino.png" width="280px" height="400px">
-            <ul>
-                <li>Rene</li>
-                <li>Diego</li>
-                <li>Soneca</li>
-                <li>Lazarento</li>
-            </ul>
-            <br><br>
-            <table>
-                <caption>Minha tabela</caption>
-                <thead>
-                    <th>Nome</th>
-                    <th>Peso</th>
-                    <th>idade</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>zezinho</td>
-                        <td>180</td>
-                        <td>195 dias</td>
-                    </tr>
-                    <tr>
-                        <td>popo</td>
-                        <td>81</td>
-                        <td>102 dias</td>
-                    </tr>
-                    <tr>
-                        <td>Mariazinha</td>
-                        <td>85</td>
-                        <td>126 dias</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="coluna1">
+                <p>Sugestões de nomes</p>
+                <ul>
+                    <li>Rene</li>
+                    <li>Diego</li>
+                    <li>Soneca</li>
+                    <li>Lazarento</li>
+                </ul>
+            </div>
+            <div class="coluna2">
+                <form action="/sugestaonome" method="post">
+                    <label>qual é o nome deste porquinho?</label>
+                    <input name="nomeporco">
+
+                    <button>Enviar sugestão</button>
+                </form>
+
+                <img src="static//suino.png" width="280px" height="400px">
+
+            </div>
+
+            <div class="coluna3">
+                <table>
+                    <caption>Minha tabela</caption>
+                    <thead>
+                        <th>Nome</th>
+                        <th>Peso</th>
+                        <th>idade</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>zezinho</td>
+                            <td>180</td>
+                            <td>195 dias</td>
+                        </tr>
+                        <tr>
+                            <td>popo</td>
+                            <td>81</td>
+                            <td>102 dias</td>
+                        </tr>
+                        <tr>
+                            <td>Mariazinha</td>
+                            <td>85</td>
+                            <td>126 dias</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
 
 
         </div>
