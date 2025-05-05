@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+#inicial{
+    background-color: white;
+    font-size: 38px;
+    text-align: right;
+}
+
+.topo{
+        margin-top: 100px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: red;
+        font-size: 51px;
+        text-align: center;
+    }
+
+.meio{
+    display: flex;
+    margin-top: 40px;
+    background-color: LightGrey;
+    align-items: center;
+}
+.meio p{
+
+    color: red;
+    font-size: 22px;
+    text-align: center;
+}
+.coluna1{
+    width:33%;
+}
+.coluna2{
+    width:33%;
+}
+.coluna3{
+    width:33%;
+}
+
