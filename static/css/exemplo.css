@@ -1,0 +1,22 @@
+.zero{
+    display: flex;
+    background-color: gray;
+}
+
+.um{
+    width: 25%;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: 25%;
+    height: 80px;
+    border: double 2px black;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.dois{
+    width: 25%;
+    margin-top: 50px;
+    background-color: green;
+    height: 80px;
+}
