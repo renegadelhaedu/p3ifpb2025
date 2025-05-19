@@ -1,0 +1,21 @@
+.topo{
+    width: 100%;
+    height: 100px;
+}
+.menu{
+    display: flex;
+    padding-left: 100px;
+}
+.menu a{
+    width:50px;
+    margin-left: 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.conteudo{
+    margin-top: 20px;
+}
