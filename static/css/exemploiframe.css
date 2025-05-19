@@ -7,13 +7,19 @@
     padding-left: 100px;
 }
 .menu a{
-    width:60px;
-    margin-left: 20px;
+    padding-top:5px;
+    text-align: center;
+    width:70px;
+    height: 28px;
+    margin-left: 30px;
     background-color: blue;
     color: white;
     text-decoration: none;
     border-radius: 3px;
     font-size: 16px;
+}
+.menu a:hover{
+    opacity: 0.5;
 }
 
 .conteudo{
