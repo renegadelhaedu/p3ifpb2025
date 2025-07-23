@@ -15,11 +15,14 @@ function verificar() {
       var confirmaremail = document.getElementById("campoemailconfirm").value;
       var idade = document.getElementById("campoidade").value;
 
-      if (nome != "" && email != "" && idade != "" && idade >= 18){
-        botao.type = "submit";
-
+      if (nome == "" || email == "" || idade == ""){
+        document.getElementById("paragrafo").textContent = "Campo em branco";
+      }else if (email != confirmaremail){
+        document.getElementById("paragrafo").textContent = "e-mail diferente na confimação";
+      }else if (idade < 18){
+        document.getElementById("paragrafo").textContent = "usuário com idade menor que 18 anos";
       }else{
-        document.getElementById("paragrafo").textContent = "Algo errado";
+        botao.type = "submit";
       }
 }
 
