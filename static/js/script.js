@@ -1,12 +1,40 @@
+function verificarinimigo(){
+    var nomeuser = document.getElementById("camponome").value;
+    if(nomeuser == "kamyllha"){
+        alert("essa pessoa é odiada por L");
+        document.getElementById("camponome").value = "";
+    }
+}
+
+
+function verificar() {
+
+      var botao = document.getElementById("botao");
+      var nome = document.getElementById("camponome").value;
+      var email = document.getElementById("campoemail").value;
+      var confirmaremail = document.getElementById("campoemailconfirm").value;
+      var idade = document.getElementById("campoidade").value;
+
+      if (nome != "" && email != "" && idade != "" && idade >= 18){
+        botao.type = "submit";
+
+      }else{
+        document.getElementById("paragrafo").textContent = "Algo errado";
+      }
+}
+
 
 function mudarTexto() {
       document.getElementById("titulo").innerText = "Você clicou no botão!";
 
       var nome = document.getElementById("camponome").value;
-      if (nome == ""){
-        document.getElementById("paragrafo").textContent = "ta vazio";
+      var nome = document.getElementById("camponome").value;
+      var nome = document.getElementById("camponome").value;
+
+      if (nome != "" && email != ""){
+        document.getElementById("paragrafo").textContent = "nao ta vazio";
       }else{
-        document.getElementById("paragrafo").textContent = "O nome dele é " + nome;
+        document.getElementById("paragrafo").textContent = "Está sem nada";
       }
 }
 
@@ -17,3 +45,4 @@ function teste(){
         document.getElementById("camponome").value = "";
     }
 }
+
