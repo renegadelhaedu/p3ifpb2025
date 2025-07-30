@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.btn-abrir-modal {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-abrir-modal:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do Modal */
+.modal {
+    display: none; /* Por padrão, o modal fica oculto */
+    position: fixed; /* Fixado na tela, cobre todo o viewport */
+    z-index: 1000; /* Garante que fique por cima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Adiciona scroll se o conteúdo for grande */
+    background-color: rgba(0,0,0,0.6); /* Fundo escurecido */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.modal-conteudo {
+    background-color: #fff;
+    margin: auto; /* Ajuda a centralizar na ausência de flexbox */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 80%; /* Largura padrão */
+    max-width: 500px; /* Largura máxima */
+    position: relative; /* Para posicionar o botão de fechar */
+    animation: fadeInScale 0.3s ease-out; /* Adiciona uma animação */
+}
+
+.fechar-modal-btn {
+    color: #aaa;
+    float: right; /* Alinha o 'x' à direita */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fechar-modal-btn:hover,
+.fechar-modal-btn:focus {
+    color: #000;
+    text-decoration: none;
+}
+
