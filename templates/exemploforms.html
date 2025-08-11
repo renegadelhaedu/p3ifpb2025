@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Exemplos: Radio, Checkbox e Select</title>
+</head>
+<body>
+  <h1>Formulários HTML - Radio, Checkbox e Select</h1>
+
+
+  <h2>1) Exemplo: Radio</h2>
+  <form action="#" method="post">
+    <p>Escolha um sabor de sorvete:</p>
+    <label>
+      <input type="radio" name="sabor" value="chocolate" required>
+      Chocolate
+    </label><br>
+    <label>
+      <input type="radio" name="sabor" value="baunilha">
+      Baunilha
+    </label><br>
+    <label>
+      <input type="radio" name="sabor" value="morango">
+      Morango
+    </label><br>
+    <input type="submit" value="Enviar Radio">
+  </form>
+
+  <hr>
+
+  <h2>Checkbox (múltipla escolha)</h2>
+  <form action="#" method="post">
+    <p>Selecione os hobbies:</p>
+    <label>
+      <input type="checkbox" name="hobby" value="leitura">
+      Leitura
+    </label><br>
+    <label>
+      <input type="checkbox" name="hobby" value="musica">
+      Música
+    </label><br>
+    <label>
+      <input type="checkbox" name="hobby" value="esporte">
+      Esporte
+    </label><br>
+    <label>
+      <input type="checkbox" name="hobby" value="cozinhar">
+      Cozinhar
+    </label><br>
+    <input type="submit" value="Enviar Checkboxes">
+  </form>
+
+  <hr>
+
+  <h2>Exemplo: Select</h2>
+  <form action="#" method="post">
+    <p>Destino de viagem (escolha única):</p>
+    <select name="destino" required>
+      <option value="">-- selecione --</option>
+      <option value="rio">Rio de Janeiro</option>
+      <option value="sao_paulo">São Paulo</option>
+      <option value="fortaleza">Fortaleza</option>
+      <option value="porto_alegre">Porto Alegre</option>
+    </select>
+    <br><br>
+
+
+    <input type="submit" value="Enviar Selects">
+  </form>
+</body>
+</html>
