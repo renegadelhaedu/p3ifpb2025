@@ -1,0 +1,32 @@
+.todo{
+    background-color: lightblue;
+}
+
+.meuframe{
+        background-color: white;
+
+}
+
+.topo{
+    display: flex;
+}
+
+.botao{
+    witdh: 190px;
+    height: 50px;
+
+}
+
+.botao a{
+    padding:5px 15px 5px 15px;
+    text-align: center;
+    width:170px;
+    height: 60px;
+    margin-left: 30px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 16px;
+
+}
