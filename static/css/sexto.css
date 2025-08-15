@@ -1,5 +1,5 @@
 .todo{
-    background-color: lightblue;
+    background-color: white;
 }
 
 .meuframe{
@@ -9,11 +9,15 @@
 
 .topo{
     display: flex;
+    padding-top: 20px;
+    border: solid 2px gray;
+    border-radius: 6px;
 }
 
 .botao{
     witdh: 190px;
     height: 50px;
+
 
 }
 
